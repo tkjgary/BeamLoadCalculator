@@ -82,7 +82,7 @@ parameters to support a structure with a known load, which in turn saves costs a
 wastage.  
 
 
-# Theoretical Aspects
+## Theoretical Aspects
 
 The yield moment, **Mₓ**, is calculated using the formula:  
 
