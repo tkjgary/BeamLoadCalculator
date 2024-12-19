@@ -1,6 +1,6 @@
 # BeamLoadCalculator
 
-This repository contains an Octave/MATLAB program designed to analyze simply supported beams with a rectangular cross-section under a uniformly distributed load as shown in [[Figure 1](#figure1)]. The program calculates the load that causes yield and plastic collapse at the critical section of the beam. Below is the table of contents for navigating the repository.
+This repository contains an Octave/MATLAB program designed to analyze simply supported beams with a rectangular cross-section under a uniformly distributed load, W as shown in [[Figure 1](#figure1)]. The program calculates the load that causes yield and plastic collapse at the critical section of the beam. Below is the table of contents for navigating the repository.
 
 ---
 <a name="figure1"></a> ![Figure1](Figure1.png)
