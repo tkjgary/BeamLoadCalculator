@@ -1,10 +1,11 @@
 # BeamLoadCalculator
 
-This repository contains an Octave/MATLAB program designed to analyze simply supported beams with a rectangular cross-section under a uniformly distributed load, W as shown in [[Figure 1](#figure1)]. The program calculates the load that causes yield and plastic collapse at the critical section of the beam. Below is the table of contents for navigating the repository.
+This repository contains an Octave/MATLAB program designed to analyze simply supported beams with a rectangular cross-section under a uniformly distributed load, W as shown in [[Figure 1](#figure1)]. The program calculates the load that causes yield and plastic collapse at the critical section of the beam. 
 
 ---
 <a name="figure1"></a> ![Figure1](Figure1.png)
 
+Below is the table of contents for navigating the repository.
 
 ## Table of Contents
 | File                                                   | Function                                               |
@@ -29,7 +30,7 @@ This repository contains an Octave/MATLAB program designed to analyze simply sup
 2. **Download the Program**:
    - Clone this repository using:
      ```
-     git clone https://github.com/yourusername/beam-analysis.git
+     git clone https://github.com/tkjgary/BeamLoadCalculator.git
      ```
    - Alternatively, download the source files directly.
 
@@ -48,16 +49,18 @@ This repository contains an Octave/MATLAB program designed to analyze simply sup
    - Enter the required parameters one by one as prompted by the program (e.g., beam length, width, height, material properties).
    - Example:
      ```
-     Enter beam length (m): 5
-     Enter beam width (m): 0.3
-     Enter beam height (m): 0.2
+     Modulus of elasticity, E (Pa): 200e+9
+     Yield strength, Sy (Pa): 250e+6
+     Width of the cross section, b (m): 250e-3
      ...
      ```
 
 6. **View Results**:
    - Once all parameters are entered, the program will display the results, including:
-     - Yield load
-     - Plastic collapse load
+     - The location of the critical section measured from the left side of the beam, Lmax (m)
+     - The maximum moment of the critical section in terms of w, Mc (Nm)
+     - The yield moment, My (Nm)
+     - 
 
 
 ## Detailed Explanation
