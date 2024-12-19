@@ -12,7 +12,7 @@ Below is the table of contents for navigating the repository.
 |--------------------------------------------------------|--------------------------------------------------------|
 | [How to Run](README.md#how-to-run)                     | Instructions to execute the program                    |
 | [Detailed Explanation](README.md#detailed-explanation) | Detailed explanation of the program                    |
-| [Theoretical Aspects](Theoretical_aspects.md)          | Explains the theoretical framework and formulas        |
+| [Theoretical Aspects](README.md#theoretical-aspects)   | Explains the theoretical framework and formulas        |
 | [Programming Flowchart](Figure2.png)                   | Visual representation of the program's logic           |
 | [Sample Runs](Figure3.png)                             | Screenshots of sample program outputs                  |
 | [Handwritten Solutions](docs/)                         | Step-by-step solutions to a sample problem             |
@@ -39,14 +39,11 @@ Below is the table of contents for navigating the repository.
    - Navigate to the directory containing the `Code.m` file.
 
 4. **Run the Program**:
-   - In the Octave command window, type:
+   - In the Octave editor window, press F5 to run the program OR click run > Save file and run/continue:
      ```
-     Code
-     ```
-     and press **Enter**.
 
 5. **Input Parameters**:
-   - Enter the required parameters one by one as prompted by the program (e.g., beam length, width, height, material properties).
+   - In the Octave command window, enter the required parameters one by one as prompted by the program (e.g., material properties, beam length, width, height).
    - Example:
      ```
      Modulus of elasticity, E (Pa): 200e+9
@@ -82,5 +79,48 @@ can be applied on supporting beams or building frames where the material, cross 
 length is specified. It can also be used to calculate the minimum requirements for different 
 parameters to support a structure with a known load, which in turn saves costs and reduces 
 wastage.  
+
+
+## Theoretical Aspects
+# Theoretical Aspects
+
+The yield moment, **Mₓ**, is calculated using the formula:  
+
+$$
+M_Y = \frac{\sigma_Y I}{c}
+$$
+
+where:  
+- **σ_Y** is the yield strength of the material,  
+- **I** is the second moment of inertia,  
+- **c** is the perpendicular distance from the neutral axis to the point farthest away from the neutral axis.  
+
+The second moment of inertia, **I**, for a rectangular cross-section is calculated using the formula:  
+
+$$
+I = \frac{b a^3}{12}
+$$
+
+where:  
+- **b** is the width of the cross-section,  
+- **a** is the height of the cross-section.  
+
+The compressive force, **C**, is given by:  
+
+$$
+C = \sigma_Y A
+$$
+
+where:  
+- **A** is the area of the cross-section where the force acts on.  
+
+The shape factor of the beam, **k**, is determined using the ratio:  
+
+$$
+k = \frac{M_p}{M_Y}
+$$
+
+where:  
+- **Mₚ** is the plastic moment.
 
 
