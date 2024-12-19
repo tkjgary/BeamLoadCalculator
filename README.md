@@ -84,7 +84,7 @@ wastage.
 
 ## Theoretical Aspects
 
-The yield moment, **Mₓ**, is calculated using the formula:  
+The yield moment, **My**, is calculated using the formula:  
 
 $$
 M_Y = \frac{\sigma_Y I}{c}
